@@ -6,13 +6,14 @@
 
 ```bash
 21-iceT-GitOps/
-├── spring/                      # Spring 서비스 배포 정의
+├── spring/                      
 │   ├── deployment.yaml
 │   ├── service.yaml
 │   └── ingress.yaml
-├── fastapi/                     # FastAPI 서비스 배포 정의
-│   └── helm-values.yaml
-├── argocd/                      # ArgoCD 자체 배포 관련 리소스
+├── fastapi/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── ingress.yaml
+├── argocd/                     
 │   └── argocd-ingress.yaml
-└── base/    
-
+└── project.yaml  # ArgoCD App 정의
