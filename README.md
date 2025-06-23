@@ -6,14 +6,13 @@
 
 ```bash
 21-iceT-GitOps/
-├── alb/
-│   ├── argocd-ingress.yaml
-│   ├── spring-ingress.yaml
-│   └── fastapi-ingress.yaml
-├── argocd/
-│   └── deployment.yaml
-├── spring/
-│   └── deployment.yaml
-├── apps/
-│   └── app-alb.yaml
+├── spring/                      # Spring 서비스 배포 정의
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── ingress.yaml
+├── fastapi/                     # FastAPI 서비스 배포 정의
+│   └── helm-values.yaml
+├── argocd/                      # ArgoCD 자체 배포 관련 리소스
+│   └── argocd-ingress.yaml
+└── base/    
 
