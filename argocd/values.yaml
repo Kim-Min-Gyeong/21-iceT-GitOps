@@ -1,0 +1,2 @@
+certificateArn: "PLACEHOLDER"  # ArgoCD Application에서 override
+ingressHost: "argocd.koco-test.click"
