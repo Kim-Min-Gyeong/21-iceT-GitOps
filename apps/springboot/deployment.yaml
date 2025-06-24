@@ -16,5 +16,8 @@ spec:
       containers:
         - name: springboot
           image: 266735804784.dkr.ecr.ap-northeast-2.amazonaws.com/eks-app-repo:latest
+          envFrom:
+            - secretRef:
+                name: spring-env-secret
           ports:
             - containerPort: 8080
