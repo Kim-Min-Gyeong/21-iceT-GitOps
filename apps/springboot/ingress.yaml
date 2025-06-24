@@ -23,3 +23,10 @@ spec:
                 name: springboot
                 port:
                   number: 8080
+          - path: /oauth/kakao
+            pathType: Prefix
+            backend:
+              service:
+                name: springboot
+                port:
+                  number: 8080
