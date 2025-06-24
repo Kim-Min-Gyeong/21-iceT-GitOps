@@ -16,14 +16,14 @@ spec:
     - host: koco-test.click
       http:
         paths:
-          - path: /api/backend
+          - path: /api/
             pathType: Prefix
             backend:
               service:
                 name: springboot
                 port:
                   number: 80
-          - path: /oauth/kakao
+          - path: /oauth/
             pathType: Prefix
             backend:
               service:
