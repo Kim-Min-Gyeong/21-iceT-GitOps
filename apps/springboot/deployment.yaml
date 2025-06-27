@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: 266735804784.dkr.ecr.ap-northeast-2.amazonaws.com/eks-app-repo:latest
+          image: 266735804784.dkr.ecr.ap-northeast-2.amazonaws.com/eks-app-repo:v1.0.5
           envFrom:
             - secretRef:
                 name: spring-env-secret
