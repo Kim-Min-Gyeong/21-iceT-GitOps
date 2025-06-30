@@ -13,6 +13,7 @@ metadata:
     alb.ingress.kubernetes.io/backend-protocol: HTTP
     alb.ingress.kubernetes.io/healthcheck-path: /actuator/health
 spec:
+  ingressClassName: alb
   rules:
     - host: koco-test.click
       http:
