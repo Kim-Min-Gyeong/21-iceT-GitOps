@@ -12,12 +12,14 @@ spec:
     metadata:
       labels:
         app: springboot
-    spec:
+   spec:
       containers:
         - name: springboot
-          image: 266735804784.dkr.ecr.ap-northeast-2.amazonaws.com/eks-app-repo:v1.0.7
-          envFrom:
-            - secretRef:
-                name: spring-env-secret    
+          image: 266735804784.dkr.ecr.ap-northeast-2.amazonaws.com/eks-app-repo:v1.0.4
           ports:
             - containerPort: 8080
+          envFrom:
+            - secretRef:
+                name: spring-env-secret
+          args:
+            - "--spring.data.redis.url=redis://redis-master.redis.svc.cluster.local:6379"
