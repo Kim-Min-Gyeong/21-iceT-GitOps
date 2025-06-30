@@ -22,4 +22,5 @@ spec:
             - secretRef:
                 name: spring-env-secret
           args:
-            - "--spring.data.redis.url=redis://redis-master.redis.svc.cluster.local:6379"
+            - "--spring.data.redis.host=redis-master.redis.svc.cluster.local"
+            - "--spring.data.redis.port=6379"
