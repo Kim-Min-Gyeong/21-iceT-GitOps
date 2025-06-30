@@ -21,6 +21,3 @@ spec:
           envFrom:
             - secretRef:
                 name: spring-env-secret
-          args:
-            - "--spring.data.redis.host=redis-master.redis.svc.cluster.local"
-            - "--spring.data.redis.port=6379"
