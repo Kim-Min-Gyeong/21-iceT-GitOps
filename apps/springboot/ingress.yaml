@@ -15,7 +15,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: koco-test.click
+    - host: api.koco-test.click
       http:
         paths:
           - path: /api
