@@ -9,9 +9,6 @@ spec:
     repoURL: https://github.com/Kim-Min-Gyeong/21-iceT-GitOps.git
     targetRevision: HEAD
     path: apps/springboot
-    helm:
-      valueFiles:
-      - ../../../env/prod/values-prod.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: springboot
